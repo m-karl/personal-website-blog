@@ -56,8 +56,8 @@ devDependencies:
     specifier: ^0.59.0
     version: 0.59.0
   '@unocss/transformer-directives':
-    specifier: ^0.60.4
-    version: 0.60.4
+    specifier: ^0.61.0
+    version: 0.61.0
   bumpp:
     specifier: ^9.4.0
     version: 9.4.0
@@ -1875,6 +1875,10 @@ packages:
     resolution: {integrity: sha512-6tz8KTzC30oB0YikwRQoIpJ6Y6Dg+ZiK3NfCIsH+UX11bh2J2M53as2EL/5VQCqtiUn3YP0ZEzR2d1AWX78RCA==}
     dev: true
 
+  /@unocss/core@0.61.0:
+    resolution: {integrity: sha512-Y/Ly3LPIAzOBlWCdKBVzVzIaaWDsf+oWPIUZlaW7DL++WWypVBCghmxXIT5dyuMGXE560Hj92st4AkXfuVdxGQ==}
+    dev: true
+
   /@unocss/extractor-arbitrary-variants@0.60.4:
     resolution: {integrity: sha512-USuFGs5CLft9q7IGNdAEp1oliuUns+W7OO0Tx5qtx/oBh6pU/L93lcNNsuuGNrMU8BCmF3atx1/PEmGymgJ7VA==}
     dependencies:
@@ -1982,6 +1986,14 @@ packages:
       magic-string: 0.30.10
     dev: true
 
+  /@unocss/rule-utils@0.61.0:
+    resolution: {integrity: sha512-MCdmfhE6Q9HSWjWqi2sx5/nnKyOEhfhoo+pVumHIqkHQICQ/LuKioFf7Y7e5ycqjFE/7dC2hKGZJ8WTMGIOMwA==}
+    engines: {node: '>=14'}
+    dependencies:
+      '@unocss/core': 0.61.0
+      magic-string: 0.30.10
+    dev: true
+
   /@unocss/scope@0.60.4:
     resolution: {integrity: sha512-AOu/qvi4agy0XfGF3QEBbuxVHkVZHpmU0NMBYuxa0B869YZENT87sTM6DVwtvr75CZvACWxv/hcL3lR68uKBjw==}
     dev: true
@@ -2014,6 +2026,14 @@ packages:
     dependencies:
       '@unocss/core': 0.60.4
       '@unocss/rule-utils': 0.60.4
+      css-tree: 2.3.1
+    dev: true
+
+  /@unocss/transformer-directives@0.61.0:
+    resolution: {integrity: sha512-15nIynJPYFYnW/TUQu0NyZ5uxTDcrRyY8sB3axcYZOqqlu1hgPFotVukl6jqCZgGUR1AbfbnJwuDlcBQeT8xpA==}
+    dependencies:
+      '@unocss/core': 0.61.0
+      '@unocss/rule-utils': 0.61.0
       css-tree: 2.3.1
     dev: true
 
@@ -5710,7 +5730,7 @@ packages:
     dependencies:
       '@volar/language-service': 2.1.6
       '@vscode/emmet-helper': 2.9.2
-      vscode-html-languageservice: 5.1.2
+      vscode-html-languageservice: 5.2.0
     dev: false
 
   /volar-service-emmet@0.0.45(@volar/language-service@2.2.5):
@@ -5736,7 +5756,7 @@ packages:
         optional: true
     dependencies:
       '@volar/language-service': 2.1.6
-      vscode-html-languageservice: 5.1.2
+      vscode-html-languageservice: 5.2.0
       vscode-languageserver-textdocument: 1.0.11
       vscode-uri: 3.0.8
     dev: false
