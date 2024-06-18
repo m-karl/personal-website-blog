@@ -1,6 +1,6 @@
 export const THEME_CONFIG: App.Locals['config'] = {
   /** blog title */
-  title: "活版印字",
+  title: "personal blog / portfolio",
   /** your name */
   author: "Karl Ma",
   /** website description */
@@ -15,7 +15,7 @@ export const THEME_CONFIG: App.Locals['config'] = {
   socials: [
     {
       name: "github",
-      href: "https://github.com/moeyua/astro-theme-typography",
+      href: "https://github.com/m-karl",
     },
     {
       name: "rss",
@@ -23,10 +23,6 @@ export const THEME_CONFIG: App.Locals['config'] = {
     },
     {
       name: "twitter",
-      href: "https://github.com/moeyua/astro-theme-typography",
-    },
-    {
-      name: "mastodon",
       href: "https://github.com/moeyua/astro-theme-typography",
     }
   ],
