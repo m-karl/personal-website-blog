@@ -33,20 +33,20 @@ export const THEME_CONFIG: App.Locals['config'] = {
   /** your navigation links */
   navs: [
     {
+      name: "About",
+      href: "/about",
+    },
+    {
+      name: "Resume",
+      href: "/resume",
+    },
+    {
       name: "Posts",
       href: "/posts/page/1",
     },
     {
-      name: "Archive",
-      href: "/archive",
-    },
-    {
       name: "Categories",
       href: "/categories"
-    },
-    {
-      name: "About",
-      href: "/about",
     },
   ],
   /** your category name mapping, which the `path` will be shown in the url */
