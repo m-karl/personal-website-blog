@@ -13,11 +13,10 @@ Astro component syntax is a superset of HTML. The syntax was [designed to feel f
 
 You can define local JavaScript variables inside of the frontmatter component script between the two code fences (`---`) of an Astro component. You can then inject these variables into the component's HTML template using JSX-like expressions!
 
-:::note[dynamic vs reactive]
+note [dynamic vs reactive]
 Using this approach, you can include **dynamic** values that are calculated in the frontmatter. But once included, these values are not **reactive** and will never change. Astro components are templates that only run once, during the rendering step.
 
 See below for more examples of [differences between Astro and JSX](#differences-between-astro-and-jsx).
-:::
 
 ### Variables
 
@@ -48,7 +47,7 @@ const name = 'Astro'
 <MyComponent templateLiteralNameAttribute={`MyNameIs${name}`} />
 ```
 
-:::caution
+caution
 HTML attributes will be converted to strings, so it is not possible to pass functions and objects to HTML elements.
 For example, you can't assign an event handler to an HTML element in an Astro component:
 
