@@ -1,6 +1,10 @@
 ---
 import type { HTMLAttributes } from "astro/types";
 
+import { Image } from "astro:assets";
+
+import profileImage from "../assets/profile.jpg";
+
 type Props = HTMLAttributes<"header">;
 
 const { ...attrs } = Astro.props;
@@ -56,5 +60,6 @@ const { translate: t } = Astro.locals;
         ))
       }
     </ul>
+    <Image src={profileImage} alt="profile image" width="170" />
   </nav>
 </header>
