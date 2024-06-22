@@ -46,19 +46,25 @@ const { translate: t } = Astro.locals;
         ))
       }
     </ul>
+
+    <!-- Socials -->
     <ul un-flex="~ row gap-1 justify-center">
-      {
-        socials.map((soc) => (
-          <li>
-            <a
-              href={soc.href}
-              target="_blank"
-              title={soc.name}
-              class={`icon i-mdi-${soc.name}`}
-            />
-          </li>
-        ))
-      }
+      <li>
+        <a
+          href="https://github.com/m-karl"
+          target="_blank"
+          title="GitHub"
+          class="icon i-mdi-github"
+        />
+      </li>
+      <li>
+        <a
+          href="https://www.linkedin.com/in/karl-ma/"
+          target="_blank"
+          title="LinkedIn"
+          class="icon i-mdi-linkedin"
+        />
+      </li>
     </ul>
     <Image src={profileImage} alt="profile image" width="170" />
   </nav>

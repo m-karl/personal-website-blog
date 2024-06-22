@@ -14,14 +14,6 @@ export const THEME_CONFIG: App.Locals['config'] = {
   /** your socials */
   socials: [
     {
-      name: "github",
-      href: "https://github.com/m-karl",
-    },
-    {
-      name: "twitter",
-      href: "https://www.linkedin.com/in/karl-ma/",
-    },
-    {
       name: "rss",
       href: "/atom.xml",
     },
