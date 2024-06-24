@@ -4,6 +4,7 @@ import type { HTMLAttributes } from "astro/types";
 import { Image } from "astro:assets";
 
 import profileImage from "../assets/profile.jpg";
+import { formatYAMLException } from "node_modules/astro/dist/core/errors/utils";
 
 type Props = HTMLAttributes<"header">;
 
@@ -66,6 +67,6 @@ const { translate: t } = Astro.locals;
         />
       </li>
     </ul>
-    <Image src={profileImage} alt="profile image" width="170" />
+    <Image style="border-radius: 8px; align-self: center" src={profileImage} alt="profile image" width="170" />
   </nav>
 </header>
