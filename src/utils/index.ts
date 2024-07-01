@@ -4,9 +4,8 @@ import MarkdownIt from 'markdown-it'
 
 export async function getCategories() {
   const posts = await getPosts()
-
   const categories = new Map<string, Post[]>()
-
+  
   posts.forEach((post) => {
     if (post.data.categories) {
       post.data.categories.forEach((c) => {
@@ -16,7 +15,6 @@ export async function getCategories() {
       })
     }
   })
-
   return categories
 }
 
